@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC 
+"-//Hibernate/Hibernate Configuration DTD//EN"
+"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="br.com.crud.negocio.entidade.Descricao" table="tb_descricao">
+		<id name="idProduto" type="string" column="id_produto" ></id>
+		<property name="fornecedor" type="string">
+			<column name="fornecedor" />
+		</property>
+		<property name="preco" type="string">
+			<column name="preco" />
+		</property>
+	</class>
+	
+	
+</hibernate-mapping>
