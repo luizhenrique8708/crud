@@ -1,0 +1,18 @@
+create database javabd;
+
+use javabd;
+
+create table cliente(
+ id integer not null auto_increment,
+    nome varchar(50),
+    email varchar(50),
+    telefone varchar(15),
+    constraint pk_client primary key (id)
+);
+
+insert into client values (null, 'Luiz', 'luiz@henrique.com', '123456');
+insert into client values (null, 'Gabriel', 'gabriel@silveira.com', '1234567');
+insert into client values (null, 'Victor', 'victor@hugo.com', '12345678');
+insert into client values (null, 'Fábio', 'fabio@farias.com', '123456789');
+
+select * from cliente;
